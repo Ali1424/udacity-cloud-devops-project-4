@@ -1,1 +1,7 @@
-<paste log output from Kubernetes-mediated prediction, here>
+Flag --generator has been deprecated, has no effect and will be removed in the future.
+Error from server (AlreadyExists): pods "project-4-cluster" already exists
+NAME                READY   STATUS    RESTARTS   AGE
+project-4-cluster   1/1     Running   0          9m26s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
