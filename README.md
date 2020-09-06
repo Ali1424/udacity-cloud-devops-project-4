@@ -1,4 +1,4 @@
-#Udacity Cloud DevOps Nanodegree - Project 4 - Operationalizing a Machine Learning Microservice API
+# Udacity Cloud DevOps Nanodegree - Project 4 - Operationalizing a Machine Learning Microservice API
 
 [![CircleCI](https://circleci.com/gh/henokhm/udacity-cloud-devops-project-4.svg?style=svg)](LINK)
 
