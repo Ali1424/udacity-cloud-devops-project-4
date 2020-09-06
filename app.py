@@ -16,6 +16,7 @@ def scale(payload):
     LOG.info(f"Scaling Payload: \n{payload}")
     scaler = StandardScaler().fit(payload.astype(float))
     scaled_adhoc_predict = scaler.transform(payload.astype(float))
+    LOG.info(f"Scaled Payload: \n{scaled_adhoc_predict}")
     return scaled_adhoc_predict
 
 @app.route("/")
@@ -62,6 +63,7 @@ def predict():
     scaled_payload = scale(inference_payload)
     # get an output prediction from the pretrained model, clf
     prediction = list(clf.predict(scaled_payload))
+    LOG.info(f"Prediction: \n{prediction}")
     # TO DO:  Log the output prediction value
     return jsonify({'prediction': prediction})
 
